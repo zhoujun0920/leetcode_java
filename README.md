@@ -5,4 +5,5 @@ https://cspiration.com/leetcodeClassification#10301
 
 ### 1.1 Array
 #### Base Level
+  * 27 Remove Element
   * 41 First Missing Positive
