@@ -1,4 +1,4 @@
-Solution {
+class Solution {
   public int removeDuplicates(int[] nums) {
     int n = nums.length;
     if (n <= 1) {

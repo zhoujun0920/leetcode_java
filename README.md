@@ -11,3 +11,4 @@ https://cspiration.com/leetcodeClassification#10301
   * 277 Find the Celebrity
   * 189 Rotate Array
   * 41 First Missing Positive
+  * 299 Bulls and Cows
