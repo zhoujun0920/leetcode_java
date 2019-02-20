@@ -7,4 +7,6 @@ https://cspiration.com/leetcodeClassification#10301
 #### Base Level
   * 27 Remove Element
   * 26 Remove Duplicates from Sorted Array
+  * 80 Remove Duplicates from Sorted Array II
+  * 277 Find the Celebrity
   * 41 First Missing Positive
