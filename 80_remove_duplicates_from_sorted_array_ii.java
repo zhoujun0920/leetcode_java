@@ -5,7 +5,7 @@ class Solution {
       return n;
     }
     int start = 0;
-    int end = 1;
+    int end = 0;
     int count = 1;
     while (end < n) {
       while (nums[start] == nums[end]) {
@@ -13,8 +13,9 @@ class Solution {
         if (end >= n) {
           return ++start;
         }
-        if (count < 2) {
+        if (nums[end - 1] == nums[end] && count < 2) {
           start++;
+          nums[start] = nums[end];
           count = 2;
         }
       }
@@ -25,6 +26,3 @@ class Solution {
     return ++start;
   }
 }
-0,0,1,1,1,1,2,3,3
-0,0,1,1,2,1,2,3,3
-0,0,1,1,2,3,2,3,3
