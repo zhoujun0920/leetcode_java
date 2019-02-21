@@ -13,3 +13,5 @@ https://cspiration.com/leetcodeClassification#10301
   * 41 First Missing Positive
   * 299 Bulls and Cows
   * 274 H-Index
+  * 118 Pascal Triangle
+  * 119 Pascal Triangle II
