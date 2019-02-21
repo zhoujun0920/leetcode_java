@@ -18,3 +18,6 @@ https://cspiration.com/leetcodeClassification#10301
   * 169 Majority Element
   * 229 Majority Element II
   * 275 H-Index II
+  * 243 Shortest Word Distance
+  * 244 Shortest Word Distance II
+  * 245 Shortest Word Distance III
