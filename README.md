@@ -15,3 +15,5 @@ https://cspiration.com/leetcodeClassification#10301
   * 274 H-Index
   * 118 Pascal Triangle
   * 119 Pascal Triangle II
+  * 169 Majority Element
+  * 229 Majority Element II
