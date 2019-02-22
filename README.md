@@ -22,3 +22,5 @@ https://cspiration.com/leetcodeClassification#10301
   * 244 Shortest Word Distance II
   * 245 Shortest Word Distance III
   * 217 Contains Duplicate
+  * 219 Contains Duplicate II
+  * 220 Contains Duplicate III
