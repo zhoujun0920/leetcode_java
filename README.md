@@ -24,3 +24,7 @@ https://cspiration.com/leetcodeClassification#10301
   * 217 Contains Duplicate
   * 219 Contains Duplicate II
   * 220 Contains Duplicate III
+  * 55 Jump Game
+  * 45 Jump Game II
+  * 121 Best Time to Buy and Sell Stock
+  * 122 Best Time to Buy and Sell Stock II
