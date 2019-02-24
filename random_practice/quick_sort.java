@@ -11,7 +11,7 @@ class Solution {
     int pivot = nums[end];
     int i = start;
     for (int j = start; j < end - 1; j++) {
-      if (nums[i] < pivot) {
+      if (nums[j] < pivot) {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;
