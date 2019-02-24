@@ -35,4 +35,5 @@ https://cspiration.com/leetcodeClassification#10301
   [how to solve stock quations in dp](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75928/Share-my-DP-solution-(By-State-Machine-Thinking))
   * 11 Container With Most Water
   * 42 Trapping Rain Water (In progress)
-  * 334 Increasing Triplet Subsequence
+  * 334 Increasing Triplet Subsequence (Answer)
+  * 128 Longest Consecutive Sequence
