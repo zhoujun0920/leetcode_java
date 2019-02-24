@@ -28,3 +28,9 @@ https://cspiration.com/leetcodeClassification#10301
   * 45 Jump Game II
   * 121 Best Time to Buy and Sell Stock
   * 122 Best Time to Buy and Sell Stock II
+  * 123 Best Time to Buy and Sell Stock III (In progress)
+  * 188 Best Time to Buy and Sell Stock IV (In progress)
+  * 309 Best Time to Buy and Sell Stock with Cool down
+  Need to take a look at this
+  [how to solve stock quations in dp](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75928/Share-my-DP-solution-(By-State-Machine-Thinking))
+  
