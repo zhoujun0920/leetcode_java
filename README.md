@@ -37,3 +37,5 @@ https://cspiration.com/leetcodeClassification#10301
   * 42 Trapping Rain Water (In progress)
   * 334 Increasing Triplet Subsequence (Answer)
   * 128 Longest Consecutive Sequence
+  * 164 Maximum Gap
+  * 287 Find the Duplicate Number
