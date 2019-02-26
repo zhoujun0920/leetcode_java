@@ -159,36 +159,7 @@ class Solution {
           return (nums2[n2 - 1] + nums1[0]) / 2.0;
         }
       } else {
-        int[] temp = new int[n1 + n2];
-        int i = 0;
-        int j = 0;
-        while (i + j < n1 + n2) {
-          if (nums1[i] < nums2[j]) {
-            temp[i + j] = nums1[i];
-            i++;
-            if (i == n1) {
-              while (j < n2) {
-                temp[i + j] = nums2[j];
-                  j++;
-              }
-            }
-          } else {
-            temp[i + j] = nums2[j];
-            j++;
-            if (j == n2) {
-              while (i < n1) {
-                temp[i + j] = nums1[i];
-                  i++;
-              }
-            }
-          }
-        }
-        int n = (n1 + n2) / 2;
-        if ((n1 + n2) % 2 == 0) {
-          return (temp[n - 1] + temp[n]) / 2.0;
-        } else {
-          return temp[n];
-        }
+        
       }
     }
 }

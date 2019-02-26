@@ -39,3 +39,10 @@ https://cspiration.com/leetcodeClassification#10301
   * 128 Longest Consecutive Sequence
   * 164 Maximum Gap
   * 287 Find the Duplicate Number
+  * 135 Candy (In progress)
+  * 330 Patching Array (In progress)
+  * 4 Median of Two Sorted Array (Not good enough)
+  * 321 Create Maximum Number (In progress)
+  * 327 Count of Range Sum (In progress)
+  * 289 Game of Life
+  
