@@ -10,19 +10,30 @@
 class Solution {
     public int minMeetingRooms(Interval[] intervals) {
       quickSort(intervals, 0, intervals.length - 1);
-      int count = 0;
+      List<Interval> rooms = new ArrayList<>();
       int m = 0;
       if (intervals.length > 0) {
-        count++;
+        rooms.add(intervals[0]);
+        m = 1;
       }
-      for (int i = 0; i < intervals.length - 1; i++) {
+      for (int i = 1; i < intervals.length; i++) {
         Interval temp1 = intervals[i];
-        Interval temp2 = intervals[i + 1];
-        if (temp1.end > temp2.start) {
-          count++;
+        boolean isOverlapped = true;
+        for (int j = 0; j < rooms.size(); j++) {
+          Interval temp2 = rooms.get(j);
+          if (temp1.start >= temp2.end) {
+            rooms.add(temp1);
+            rooms.remove(j);
+            isOverlapped = false;
+            break;
+          }
         }
+        if (isOverlapped) {
+          rooms.add(temp1);
+        }
+        m = m > rooms.size() ? m : rooms.size();
       }
-      return count;
+      return m;
     }
 
     private void quickSort(Interval[] intervals, int start, int end) {
@@ -62,5 +73,12 @@ class Solution {
       int end;
       Interval() { start = 0; end = 0; }
       Interval(int s, int e) { start = s; end = e; }
+    }
+}
+
+//Chronological Ordering
+class Solution {
+    public int minMeetingRooms(Interval[] intervals) {
+
     }
 }
