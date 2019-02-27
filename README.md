@@ -4,6 +4,7 @@ https://cspiration.com/leetcodeClassification#10301
 
 
 ### 1.1 Array
+
 #### Base Level
   * 27 Remove Element
   * 26 Remove Duplicates from Sorted Array
@@ -31,7 +32,7 @@ https://cspiration.com/leetcodeClassification#10301
   * 123 Best Time to Buy and Sell Stock III (In progress)
   * 188 Best Time to Buy and Sell Stock IV (In progress)
   * 309 Best Time to Buy and Sell Stock with Cool down
-  Need to take a look at this
+  __Need to take a look at this__
   [how to solve stock quations in dp](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/discuss/75928/Share-my-DP-solution-(By-State-Machine-Thinking))
   * 11 Container With Most Water
   * 42 Trapping Rain Water (In progress)
@@ -41,8 +42,15 @@ https://cspiration.com/leetcodeClassification#10301
   * 287 Find the Duplicate Number
   * 135 Candy (In progress)
   * 330 Patching Array (In progress)
+
+#### Advanced Level
   * 4 Median of Two Sorted Array (Not good enough)
   * 321 Create Maximum Number (In progress)
   * 327 Count of Range Sum (In progress)
   * 289 Game of Life
-  
+
+#### Interval
+  * 57 Insert Interval (In progress)
+  * 56 Merge Intervals
+  * 252 Meeting Rooms
+  * 253 Meeting Rooms II
