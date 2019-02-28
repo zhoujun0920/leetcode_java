@@ -57,4 +57,5 @@ https://cspiration.com/leetcodeClassification#10301
   * 352	Data Stream as Disjoint Intervals
 
 #### Counter
-  * 239 Sliding Window Maximum
+  * 239 Sliding Window Maximum [Deque](https://leetcode.com/problems/sliding-window-maximum/discuss/65885/This-is-a-typical-monotonic-queue-problem)
+  
