@@ -58,4 +58,8 @@ https://cspiration.com/leetcodeClassification#10301
 
 #### Counter
   * 239 Sliding Window Maximum [Deque](https://leetcode.com/problems/sliding-window-maximum/discuss/65885/This-is-a-typical-monotonic-queue-problem)
-  
+  * 295 Find Median from Data Stream [Heap](https://leetcode.com/problems/find-median-from-data-stream/solution/)
+  * 53 Maximum Subarray
+  * 325 Maximum Size Subarray Sum Equals k
+  * 209 Minimum Size Subarray Sum
+  * 238 Product of Array Except Self
