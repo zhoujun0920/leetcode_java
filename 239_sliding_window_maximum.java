@@ -73,9 +73,45 @@ class Solution {
 }
 
 // Deque: Queue
-// 
+//
 class Solution {
-    public int[] maxSlidingWindow(int[] nums, int k) {
+    private class Monoqueue {
+      Deque<Integer> queue;
 
+      Monoqueue() {
+        queue = new Deque<Integer>();
+      }
+
+      void push(Integer n) {
+        while (queue.size() > 0 && queue.peekLast().compareTo(n) < 0) {
+          queue.popLast();
+        }
+        queue.pushLast(n);
+      }
+
+      void pop(Integer n) {
+        if (queue.peekFirst().equals(n)) {
+          queue.popFirst();
+        }
+      }
+
+      Integer front() {
+        return queue.peekFirst();
+      }
+    }
+
+    public int[] maxSlidingWindow(int[] nums, int k) {
+      Monoqueue monoqueu = new Monoqueue();
+      int[] result = new int[nums.length - k + 1];
+      for (int i = 0; i < nums.length; i++) {
+        if (i < k - 1) {
+          monoqueue.push(nums[i]);
+        } else {
+          monoqueue.push(nums[i]);
+          result[i - k + 1] = monoqueue.front();
+          monoqueue.pop(nums[i - k + 1]);
+        }
+      }
+      return result;
     }
 }
