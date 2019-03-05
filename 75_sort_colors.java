@@ -38,7 +38,7 @@ class Solution {
       int i = 0;
       int j = nums.length - 1;
       for (int k = 0; k <= j; k++) {
-        while (nums[k] == 2 && k < j ) {
+        while (nums[k] == 2 && k < j ) { //could swipe same number, 
           nums[k] = nums[j];
           nums[j--] = 2;
         }

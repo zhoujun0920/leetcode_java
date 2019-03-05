@@ -5,7 +5,7 @@ https://cspiration.com/leetcodeClassification#10301
 
 ### 1.1 Array
 
-#### Base Level
+#### Base Level (34)
   * 27 Remove Element
   * 26 Remove Duplicates from Sorted Array
   * 80 Remove Duplicates from Sorted Array II
@@ -43,20 +43,20 @@ https://cspiration.com/leetcodeClassification#10301
   * 135 Candy (In progress)
   * 330 Patching Array (In progress)
 
-#### Advanced Level
+#### Advanced Level (4)
   * 4 Median of Two Sorted Array (Not good enough)
   * 321 Create Maximum Number (In progress)
   * 327 Count of Range Sum (In progress)
   * 289 Game of Life
 
-#### Interval
+#### Interval (5)
   * 57 Insert Interval (In progress)
   * 56 Merge Intervals
   * 252 Meeting Rooms
   * 253 Meeting Rooms II [Chronological Ordering](https://leetcode.com/problems/meeting-rooms-ii/solution/)
   * 352	Data Stream as Disjoint Intervals
 
-#### Counter
+#### Counter (9)
   * 239 Sliding Window Maximum [Deque](https://leetcode.com/problems/sliding-window-maximum/discuss/65885/This-is-a-typical-monotonic-queue-problem)
   * 295 Find Median from Data Stream [Heap](https://leetcode.com/problems/find-median-from-data-stream/solution/)
   * 53 Maximum Subarray
@@ -67,6 +67,20 @@ https://cspiration.com/leetcodeClassification#10301
   * 228 Summary Ranges
   * 163 Missing Ranges (need handle overflow)
 
-#### Sort
+#### Sort (6)
   * 88 Merge Sorted Array
   * 75 Sort Colors (do it again)
+  * 283 Move Zeroes
+  * 376 Wiggle Subsequence
+  * 280 Wiggle Sort (do it again)
+  * 324 Wiggle Sort II (need to take a closer look at it)
+
+### 1.2 String
+#### Base Level
+  * 28 Implement strStr() (do it again, KMP)
+  * 14 Longest Common Prefix
+  * 387 First Unique Character in a String
+  * 383 Ransom Note
+  * 344 Reverse String
+  * 151 Reverse Words in a String
+  * 186 Reverse Words in a String II
