@@ -76,7 +76,7 @@ https://cspiration.com/leetcodeClassification#10301
   * 324 Wiggle Sort II (need to take a closer look at it)
 
 ### 1.2 String
-#### Base Level
+#### Base Level (21)
   * 28 Implement strStr() (do it again, KMP)
   * 14 Longest Common Prefix
   * 387 First Unique Character in a String
@@ -84,3 +84,17 @@ https://cspiration.com/leetcodeClassification#10301
   * 344 Reverse String
   * 151 Reverse Words in a String
   * 186 Reverse Words in a String II
+  * 345 Reverse Vowels of a String
+  * 205 Isomorphic Strings
+  * 293 Flip Game
+  * 294	Flip Game II ()
+  * 290 Word Pattern
+  * 242 Valid Anagram
+  * 49 Group Anagrams
+  * 249 Group Shifted Strings
+  * 87 Scramble String ()
+  * 179 Largest Number ()
+  * 6 ZigZag Conversion
+  * 161 One Edit Distance ()
+  * 38 Count and Say
+  * 358 Rearrange String k Distance Apart
