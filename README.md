@@ -87,14 +87,20 @@ https://cspiration.com/leetcodeClassification#10301
   * 345 Reverse Vowels of a String
   * 205 Isomorphic Strings
   * 293 Flip Game
-  * 294	Flip Game II ()
+  * 294	Flip Game II (in progress)
   * 290 Word Pattern
   * 242 Valid Anagram
   * 49 Group Anagrams
   * 249 Group Shifted Strings
-  * 87 Scramble String ()
-  * 179 Largest Number ()
+  * 87 Scramble String (in progress)
+  * 179 Largest Number (in progress)
   * 6 ZigZag Conversion
-  * 161 One Edit Distance ()
+  * 161 One Edit Distance (in progress)
   * 38 Count and Say
-  * 358 Rearrange String k Distance Apart
+  * 358 Rearrange String k Distance Apart (in progress)
+  * 316 Remove Duplicate Letters (in progress)
+  * 168 Excel Sheet Column Title
+  * 171 Excel Sheet Column Number
+  * 13 Roman to Integer (in progress)
+  * 12 Integer to Roman (in progress)
+  * 273 Integer to English Words
