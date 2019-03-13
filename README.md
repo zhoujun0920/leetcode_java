@@ -76,7 +76,7 @@ https://cspiration.com/leetcodeClassification#10301
   * 324 Wiggle Sort II (need to take a closer look at it)
 
 ### 1.2 String
-#### Base Level (21)
+#### Base Level (31)
   * 28 Implement strStr() (do it again, KMP)
   * 14 Longest Common Prefix
   * 387 First Unique Character in a String
@@ -99,8 +99,23 @@ https://cspiration.com/leetcodeClassification#10301
   * 38 Count and Say
   * 358 Rearrange String k Distance Apart (in progress)
   * 316 Remove Duplicate Letters (in progress)
+  * 271 Encode and Decode Strings
   * 168 Excel Sheet Column Title
   * 171 Excel Sheet Column Number
   * 13 Roman to Integer (in progress)
   * 12 Integer to Roman (in progress)
-  * 273 Integer to English Words
+  * 273 Integer to English Words (do it again)
+  * 246 Strobogrammatic Number
+  * 247 Strobogrammatic Number II
+  * 248 Strobogrammatic Number III
+
+#### Advanced Level
+  * 68 Text Justification
+  * 157 Read N Characters Given Read4
+  * 158 Read N Characters Given Read4 II - Call multiple times
+
+#### Substring (Slide Window)
+  * 76 Minimum Window Substring
+  * 30 Substring with Concatenation of All Words
+  * 3 Longest Substring Without Repeating Characters
+  * 340 Longest Substring with At Most K Distinct Characters
