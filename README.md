@@ -119,3 +119,16 @@ https://cspiration.com/leetcodeClassification#10301
   * 30 Substring with Concatenation of All Words
   * 3 Longest Substring Without Repeating Characters
   * 340 Longest Substring with At Most K Distinct Characters
+  * 395 Longest Substring with At Least K Repeating Characters (in progress)
+  * 159 Longest Substring with At Least 2 Repeating Characters (in progress)
+
+#### Palindrome
+  * 125 Valid Palindrome
+  * 266 Palindrome Permutation
+  * 5 Longest Palindrome Substring
+  * 9 Palindrome Number
+  * 214 Shortest Palindrome
+  * 336 Palindrome Pairs
+  * 131 Palindrome Partitioning
+  * 132 Palindrome Partitioning II
+  * 267 Palindrome Permutation II 

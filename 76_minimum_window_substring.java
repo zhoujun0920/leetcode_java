@@ -4,7 +4,7 @@ class Solution {
       Map<Character, Integer> remains = new HashMap<>();
       int m = Integer.MAX_VALUE;
       int maxStart = 0;
-      int maxEnd = -1;
+      int maxEnd = 0;
       char[] sArray = s.toCharArray();
       for (Character c : t.toCharArray()) {
         if (window.containsKey(c)) {
@@ -15,7 +15,7 @@ class Solution {
         }
       }
       int startIndex = 0;
-      while (startIndex < sArray.length) {
+          while (startIndex < sArray.length) {
         char c = sArray[startIndex];
         if (window.containsKey(c)) {
           break;
@@ -29,28 +29,28 @@ class Solution {
           window.put(c, res);
           if (res <= 0) {
             remains.remove(c);
+          } else {
+            remains.put(c, 1);
           }
           if (remains.keySet().size() == 0) {
             if (i - startIndex < m) {
               maxStart = startIndex;
               maxEnd = i;
-              m = i - startIndex;
             }
             char sa = sArray[startIndex++];
             int res2 = window.get(sa) + 1;
+            window.put(sa, res2);
             if (res2 > 0) {
               remains.put(sa, 1);
             }
-            window.put(sa, res2);
             while (startIndex <= i) {
               char ss = sArray[startIndex];
               if (window.containsKey(ss)) {
-                if (window.get(ss) >= 0) {
+                if (window.get(ss) == 0) {
                   if (remains.keySet().size() == 0) {
                     if (i - startIndex < m) {
                       maxStart = startIndex;
                       maxEnd = i;
-                      m = i - startIndex;
                     }
                   }
                   break;
@@ -63,16 +63,6 @@ class Solution {
           }
         }
       }
-      if (maxStart <= maxEnd) {
-        return s.substring(maxStart, maxEnd + 1);
-      } else {
-        return "";
-      }
+      return s.substring(maxStart, maxEnd + 1);
   }
 }
-
-// "aaflslflsldkalskaaa"
-// "aaa"
-// "cabwefgewcwaefgcf"
-// "cae"
-//
