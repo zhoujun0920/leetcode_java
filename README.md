@@ -109,12 +109,12 @@ https://cspiration.com/leetcodeClassification#10301
   * 247 Strobogrammatic Number II
   * 248 Strobogrammatic Number III
 
-#### Advanced Level
+#### Advanced Level (3)
   * 68 Text Justification
   * 157 Read N Characters Given Read4
   * 158 Read N Characters Given Read4 II - Call multiple times
 
-#### Substring (Slide Window)
+#### Substring (Slide Window) (6)
   * 76 Minimum Window Substring
   * 30 Substring with Concatenation of All Words
   * 3 Longest Substring Without Repeating Characters
@@ -122,7 +122,7 @@ https://cspiration.com/leetcodeClassification#10301
   * 395 Longest Substring with At Least K Repeating Characters (in progress)
   * 159 Longest Substring with At Least 2 Repeating Characters (in progress)
 
-#### Palindrome
+#### Palindrome (9)
   * 125 Valid Palindrome
   * 266 Palindrome Permutation
   * 5 Longest Palindrome Substring
@@ -130,5 +130,23 @@ https://cspiration.com/leetcodeClassification#10301
   * 214 Shortest Palindrome
   * 336 Palindrome Pairs
   * 131 Palindrome Partitioning
-  * 132 Palindrome Partitioning II
-  * 267 Palindrome Permutation II 
+  * 132 Palindrome Partitioning II (In progress)
+  * 267 Palindrome Permutation II
+
+#### Parentheses
+  * 20 Valid Parentheses
+  * 22 Generate Parentheses (do it again)
+  * 32 Longest Valid Parentheses (do it again)
+  * 241 Different Ways to Add Parentheses (in progress)
+
+#### Is Subsequence
+  * 392 Is Subsequence
+  * 115 Distinct Subsequence
+  * 187 Repeated DNA Sequences
+
+### 1.3 Math
+#### Base Level
+  * 7 Reverse Integer
+  * 165 Compare Version Number
+  * 8 String to Integer (atoi)
+  * 258 Add Digits
