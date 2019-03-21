@@ -133,13 +133,13 @@ https://cspiration.com/leetcodeClassification#10301
   * 132 Palindrome Partitioning II (In progress)
   * 267 Palindrome Permutation II
 
-#### Parentheses
+#### Parentheses (4)
   * 20 Valid Parentheses
   * 22 Generate Parentheses (do it again)
   * 32 Longest Valid Parentheses (do it again)
   * 241 Different Ways to Add Parentheses (in progress)
 
-#### Is Subsequence
+#### Is Subsequence (3)
   * 392 Is Subsequence
   * 115 Distinct Subsequence
   * 187 Repeated DNA Sequences
@@ -148,5 +148,17 @@ https://cspiration.com/leetcodeClassification#10301
 #### Base Level
   * 7 Reverse Integer
   * 165 Compare Version Number
+  * 66 Plus One
   * 8 String to Integer (atoi)
   * 258 Add Digits
+  * 67 Add Binary
+  * 43 Multiply Strings
+  * 29 Divide Two Integers
+  * 69 Sqrt(x)
+  * 50 Pow(x, n)
+  * 367 Valid Perfect Square
+  * 365 Water and Jug Problem
+  * 204 Count Primes
+
+#### Sum
+  * 1 Two Sum
