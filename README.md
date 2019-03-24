@@ -162,3 +162,43 @@ https://cspiration.com/leetcodeClassification#10301
 
 #### Sum
   * 1 Two Sum
+  * 167 Two Sum II - Input array is sorted
+  * 15 3Sum
+  * 16 3Sum Closest
+  * 259 3Sum Smaller (too slow)
+  * 18 4Sum
+
+#### Frequency low
+  * 231 Power of Two
+  * 326 Power of Three
+  * 342 Power of Four (there is a cheating way)
+  * 372 Super Pow
+  * 233 Number of Digit One [Count One](https://leetcode.com/problems/number-of-digit-one/discuss/64390/AC-short-Java-solution)
+  * 319 Bulb Switcher
+  * 292 Nim Game
+  * 202 Happy Number (find a circle in the loop)
+  * 400 Nth Digit
+
+### 1.4 Tree
+#### Base Level
+  * 144 Binary Tree Preorder Traversal
+  * 94 Binary Tree Inorder Traversal
+  * 145 Binary Tree Postorder Traversal
+  * 102 Binary Tree Level Order Traversal
+
+#### Preorder
+  * 100 Same Tree
+  * 101 Symmetric Tree
+  * 226 Invert Binary Tree
+  * 257 Binary Tree Paths
+  * 112 Path Sum
+  * 113 Path Sum II
+  * 298 Binary Tree Longest Consecutive Sequence
+  * 111 Minimum Depth of Binary Tree
+
+#### Postorder
+  * 104 Maximum Depth of Binary Tree
+  * 110 Balanced Binary Tree
+  * 124 Binary Tree Maximum Path Sum (in progress)
+  * 250 Count Univalue Substrees
+  * 366 Find Leaves of Binary Tree
