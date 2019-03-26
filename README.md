@@ -1,7 +1,7 @@
 Leetcode Java practice since 2019 Feburary.
 The order is followed by Leetcode 分类顺序表第二版
 https://cspiration.com/leetcodeClassification#10301
-
+https://github.com/haoel/leetcode
 
 ### 1.1 Array
 
@@ -201,4 +201,20 @@ https://cspiration.com/leetcodeClassification#10301
   * 110 Balanced Binary Tree
   * 124 Binary Tree Maximum Path Sum (in progress)
   * 250 Count Univalue Substrees
-  * 366 Find Leaves of Binary Tree
+  * 366 Find Leaves of Binary Tree (do it again)
+  * 337 House Robber III (do it again)
+
+#### BFS
+  * 107 Binary Tree Level Order Traversal II
+  * 103 Binary Tree Zigzag Level Order Traversal
+  * 199 Binary Tree Right Side View (DFS)
+
+#### BST
+  * 98 Validate Binary Search Tree (do it again)
+  * 235 Lowest Common Ancestor of Binary Search Tree (do it again)
+  * 236 Lowest Common Ancestor of a Binary Tree (do it again)
+  * 108 Convert Sorted Array to Binary Search Tree
+  * 109 Convert Sorted List to Binary Search Tree
+  * 173 Binary Search Tree Iterator
+  * 230 Kth Smallest Element in a BST
+  * 297 Serialize and Deserialize Binary Tree
