@@ -217,4 +217,22 @@ https://github.com/haoel/leetcode
   * 109 Convert Sorted List to Binary Search Tree
   * 173 Binary Search Tree Iterator
   * 230 Kth Smallest Element in a BST
-  * 297 Serialize and Deserialize Binary Tree
+  * 297 Serialize and Deserialize Binary Tree (in progress)
+  * 285 Inorder Successor in BST
+  * 270 Closest Binary Search Tree Value
+  * 272 Closest Binary Search Tree Value II
+  * 99 Recover Binary Search Tree [Morris Traversal] (https://leetcode.com/problems/recover-binary-search-tree/discuss/32559/Detail-Explain-about-How-Morris-Traversal-Finds-two-Incorrect-Pointer)
+
+#### Important Level
+  * 156 Binary Tree Upside Down (in progress)
+  * 116 Populating Next Right Pointers in Each Node (BFS)
+  * 117 Populating Next Right Pointers in Each Node II (BSF)
+  * 314 Binary Tree Vertical Order Traversal (in progress)
+  * 96 Unique Binary Search Trees [Catalan Number] (https://en.wikipedia.org/wiki/Catalan_number#cite_note-13)
+
+### 1.5 Backtracking
+  * 78 Subsets
+  * 90 Sebsets II
+  * 77 Combinations
+  * 39 Combination Sum
+  * 40 Combination Sum II
