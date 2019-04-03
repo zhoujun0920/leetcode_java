@@ -231,8 +231,42 @@ https://github.com/haoel/leetcode
   * 96 Unique Binary Search Trees [Catalan Number] (https://en.wikipedia.org/wiki/Catalan_number#cite_note-13)
 
 ### 1.5 Backtracking
+#### Base Level
   * 78 Subsets
   * 90 Sebsets II
   * 77 Combinations
   * 39 Combination Sum
   * 40 Combination Sum II
+  * 216 Combination Sum III
+  * 377 Combination Sum IV (in progress)
+  * 254 Factor Combinations
+  * 46 Permutations
+  * 31 Next Permutations
+  * 60 Permutation Sequence
+  * 291 Word Pattern II
+
+#### Enumeration
+  * 17 Letter Combinations of a Phone Number
+  * 320 Generalized Abbreviation
+  * 93 Restore IP Addresses
+  * 282 Expression Add Operations (in progress)
+  * 140 Word Break II (in progress)
+  * 351 Android Unlock Patterns (in progress)
+
+### 1.6 Dynamic Programming (Important)
+#### One Dimension
+  * 70 Climbing Stairs
+  * 62 Unique Paths
+  * 63 Unique Paths II
+  * 120 Triangle
+  * 279 Perfect Squares
+  * 139	Word Break
+  * 375 Guess Number Higher or Lower II
+
+### 1.7 LinkedList
+  * 206 Reverse Linked List
+  * 141 Linked List Cycle
+  * 24 Swap Nodes Pairs
+  * 328 Odd Even Linked List
+  * 92 Reverse Linked List II
+  * 237 Delete Node in a Linked List

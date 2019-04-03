@@ -18,3 +18,40 @@ class Solution {
 		}
 	}
 }
+
+// Heap's Permutation
+class Solution {
+  List<List<Integer>> results;
+
+	public List<List<Integer>> permute(int[] nums) {
+		results = new ArrayList<>();
+		recursive(nums, nums.length);
+		return results;
+	}
+
+	private void recursive(int[] nums, int k) {
+		if (k == 1) {
+			List<Integer> intList = new LinkedList<>();
+			for (int i : nums) {
+				intList.add(i);
+			}
+			results.add(new LinkedList<>(intList));
+			return;
+		}
+		recursive(nums, k - 1);
+		for (int i = 0; i < k - 1; i++) {
+			if (k % 2 == 0) {
+				swap(nums, i, k - 1);
+			} else {
+				swap(nums, 0, k - 1);
+			}
+			recursive(nums, k - 1);
+		}
+	}
+
+	private void swap(int[] nums, int i, int j) {
+		Integer temp = nums[i];
+		nums[i] = nums[j];
+		nums[j] = temp;
+	}
+}
