@@ -264,9 +264,25 @@ https://github.com/haoel/leetcode
   * 375 Guess Number Higher or Lower II
 
 ### 1.7 LinkedList
+#### Base Level
   * 206 Reverse Linked List
   * 141 Linked List Cycle
   * 24 Swap Nodes Pairs
   * 328 Odd Even Linked List
   * 92 Reverse Linked List II
   * 237 Delete Node in a Linked List
+  * 19 Remove Nth Node From End of List
+  * 83 Remove Duplicates from Sorted List
+  * 203 Remove Linked List Elements
+  * 82 Remove Duplicates from Sorted List II (do it again)
+  * 369 Plus One Linked Lists
+  * 2 Add Two Numbers
+  * 160 Intersection of Two Linked Lists (smart idea)
+  * 21 Merge Two Sorted Lists
+
+#### Advanced Level
+  * 234	Palindrome Linked List
+  * 143 Reorder List
+  * 142 Linked List Cycle II
+  * 148 Sort List
+  * 25 Reverse Nodes in k-Group
