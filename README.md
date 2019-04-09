@@ -286,3 +286,30 @@ https://github.com/haoel/leetcode
   * 142 Linked List Cycle II
   * 148 Sort List
   * 25 Reverse Nodes in k-Group
+  * 61 Rotate List
+  * 86 Partition List
+  * 23 Merge k Sorted Lists
+  * 147 Insertion Sort List
+
+### 1.8 Binary Search
+#### Base Level
+  * 278 First Bad Version
+  * 35 Search Insert Position
+  * 33 Search in Rotated Sorted Array
+  * 81 Search in Rotated Sorted Array II
+  * 153 Find Minimum in Rotated Sorted Array
+  * 154 Find Minimum in Rotated Sorted Array II
+  * 162 Find Peak Element
+  * 374 Guess Number Higher or Lower
+  * 34 Find First and Last Position of Element in Sorted Array
+  * 349 Intersection of Two Arrays
+  * 350 Intersection of Two Arrays II
+  * 315 Count of Smaller Numbers After Self (in progress)
+  * 300 Longest Increasing Subsequence (in progress)
+  * 354 Russian Doll Envelopes (in progress)
+
+### 1.9 Matrix
+#### Base Level
+  * 48 Rotate Image (in progress)
+  * 54 Spiral Matrix
+  * 59 Spiral Matrix II
