@@ -316,4 +316,8 @@ https://github.com/haoel/leetcode
   * 73 Set Matrix Zeroes
   * 311 Sparse Matrix Multiplication
   * 329 Longest Increasing Path in a Matrix
-  * 378 Kth Smallest Element in a Sorted Matrix
+  * 378 Kth Smallest Element in a Sorted Matrix (do it again)
+  * 74 Search a 2D Matrix (do it again)
+  * 240 Search a 2D Matrix II (do it again)
+  * 370 Range Addition (do it again)
+  * 79 Word Search
