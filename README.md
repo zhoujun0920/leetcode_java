@@ -321,3 +321,31 @@ https://github.com/haoel/leetcode
   * 240 Search a 2D Matrix II (do it again)
   * 370 Range Addition (do it again)
   * 79 Word Search
+  * 296 Best Meeting Point
+  * 361 Bomb Enemy
+  * 317 Shortest Distance from All Buildings (296 is similar)
+  * 36 Valid Sudoku
+  * 37 Sudoku Solver
+
+### 1.10 DFS & BFS
+  * 200 Number of Islands
+  * 286 Walls and Gates
+  * 130 Surrounded Regions
+  * 339 Nested List Weight Sum
+  * 364 Nested List Weight Sum II
+  * 127 Word Ladder (in progress)
+  * 51 N-Queens (in progress)
+  * 52 N-Queens II
+  * 126 Word Ladder II
+
+### 1.11 Stack & Priority Queue
+  * 155 Min Stack
+  * 232 Implement Queue using Stacks
+  * 225 Implement Stack using Queues
+  * 150 Evaluate Reverse Polish Notation
+  * 71 Simplify Path (in progress)
+  * 394 Decode String
+  * 224 Basic Calculator (do it again)
+  * 227 Basic Calculator II (do it again)
+  * 385 Mini Parser
+  * 84 Largest Rectangle in Histogram
