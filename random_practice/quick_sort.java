@@ -10,7 +10,7 @@ class Solution {
   public int partition(int[] nums, int start, int end) {
     int pivot = nums[end];
     int i = start;
-    for (int j = start; j < end - 1; j++) {
+    for (int j = start; j < end; j++) {
       if (nums[j] < pivot) {
         int temp = nums[i];
         nums[i] = nums[j];

@@ -339,6 +339,7 @@ https://github.com/haoel/leetcode
   * 126 Word Ladder II
 
 ### 1.11 Stack & Priority Queue
+#### Stack
   * 155 Min Stack
   * 232 Implement Queue using Stacks
   * 225 Implement Stack using Queues
@@ -349,3 +350,17 @@ https://github.com/haoel/leetcode
   * 227 Basic Calculator II (do it again)
   * 385 Mini Parser
   * 84 Largest Rectangle in Histogram
+
+#### Priority Queue
+  * 215 Kth Largest Element in an Array
+  * 347 Top K Frequent Element
+  * 313 Super Ugly Number
+  * 218 The Skyline Problem
+  * 332 Reconstruct Itinerary
+  * 341 Flatten Nested List Iterator
+
+### 1.12 Bit Manipulation
+### Base Level
+  * 389 Find the Difference
+  * 136 Single Number
+  * 318 Maximum Product of Word Lengths (slow)
