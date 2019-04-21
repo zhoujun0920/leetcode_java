@@ -9,3 +9,13 @@
 
 // a ^ a = 0
 // a ^ 0 = a
+
+// ~ bit complement
+
+// >> arithmetic shift keep sign
+// >>> logical shift fill with 0
+
+public static int modifyBit(int n, int p, int b) {
+    int mask = 1 << p;
+    return (n & ~mask) | ((b << p) & mask);
+}

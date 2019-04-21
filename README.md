@@ -364,3 +364,15 @@ https://github.com/haoel/leetcode
   * 389 Find the Difference
   * 136 Single Number
   * 318 Maximum Product of Word Lengths (slow)
+  * 371 Sum of Two Integers
+  * 338 Counting Bits
+  * 89 Gray Code
+  * 268 Missing Number
+  * 191 Number of 1 Bits
+  * 190 Reverse Bits
+  * 137 Single Number II
+  * 260 Single Number III
+
+### 1.13 Topological Sort
+### Base Level
+  * 207 Course Schedule
