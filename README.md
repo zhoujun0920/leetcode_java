@@ -360,7 +360,7 @@ https://github.com/haoel/leetcode
   * 341 Flatten Nested List Iterator
 
 ### 1.12 Bit Manipulation
-### Base Level
+#### Base Level
   * 389 Find the Difference
   * 136 Single Number
   * 318 Maximum Product of Word Lengths (slow)
@@ -374,5 +374,11 @@ https://github.com/haoel/leetcode
   * 260 Single Number III
 
 ### 1.13 Topological Sort
-### Base Level
-  * 207 Course Schedule
+#### Base Level
+  * 207 Course Schedule (slow)
+  * 210 Course Schedule II
+
+### 1.14 Random
+  * 384 Shuffle an Array
+  * 398 Random Pick Index
+  * 382 Linked List Random Node
