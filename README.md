@@ -261,7 +261,27 @@ https://github.com/haoel/leetcode
   * 120 Triangle
   * 279 Perfect Squares
   * 139	Word Break
-  * 375 Guess Number Higher or Lower II
+  * 375 Guess Number Higher or Lower II ( https://leetcode.com/problems/guess-number-higher-or-lower-ii/discuss/84764/Simple-DP-solution-with-explanation~~)
+  * 312 Burst Balloons
+  * 322 Coin Change
+
+#### Two Dimension
+  * 256 Paint House
+  * 265 Paint House II
+  * 64 Minimum Path Sum
+  * 72 Edit Distance
+  * 97 Interleaving String
+  * 174 Dungeon Game
+  * 221 Maximal Square
+  * 85 Maximal Rectangle
+
+#### Simplify
+  * 198 House Robber
+  * 213 House Robber II
+  * 276 Paint Fence
+  * 91 Decode Ways
+  * 10 Regular Expression Matching
+  * 44 Wildcard Matching
 
 ### 1.7 LinkedList
 #### Base Level
@@ -387,3 +407,29 @@ https://github.com/haoel/leetcode
   * 138 Copy List with Random Pointer
   * 133 Clone Graph
   * 399 Evaluate Division
+  * 310 Minimum Height Trees
+
+  * 149 Max Points on a Line
+
+### 1.17 Trie
+  * 211 Add and Search Word - Data structure design
+  * 208 Implement Trie (Prefix Tree)
+  * 212 Word Search II
+
+### 1.18 Design
+  * 359 Logger Rate Limiter
+  * 346 Moving Average from Data Stream
+  * 362 Design Hit Counter
+  * 281 Zigzag Iterator
+  * 284 Peeking Iterator
+  * 251 Flatten 2D Vector
+  * 288 Unique Word Abbreviation
+  * 170 Two Sum III
+  * 348 Design Tic Tac Toe
+  * 379 Design Phone Directory
+  * 353 Design Snake Game
+  * 146 LRU Cache
+  * 355 Design Twitter
+  * 303 Range Sum Query - Immutable
+  * 304 Range Sum Query 2D - Immutable
+  * 307 Range Sum Query - Mutable
