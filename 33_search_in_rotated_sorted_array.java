@@ -1,41 +1,66 @@
 class Solution {
-  public int search(int[] nums, int target) {
-      if (nums.length == 0) {
-          return -1;
+  int [] nums;
+  int target;
+
+  public int find_rotate_index(int left, int right) {
+    if (nums[left] < nums[right])
+      return 0;
+
+    while (left <= right) {
+      int pivot = (left + right) / 2;
+      if (nums[pivot] > nums[pivot + 1])
+        return pivot + 1;
+      else {
+        if (nums[pivot] < nums[left])
+          right = pivot - 1;
+        else
+          left = pivot + 1;
       }
-      if (nums.length == 1) {
-          return nums[0] == target ? 0 : -1;
-      }
-      int fast = 1;
-      int slow = 0;
-      while (fast < nums.length) {
-          if (nums[slow] > nums[fast]) {
-              break;
-          }
-          slow++;
-          fast++;
-      }
-      if (target < nums[0]) {
-          return binarySearch(fast, nums.length - 1, nums, target);
-      } else {
-          return binarySearch(0, slow, nums, target);
-      }
+    }
+    return 0;
   }
 
-  private int binarySearch(int start, int end, int[] nums, int target) {
-      if (start < end) {
-          int mid = end - (end - start) / 2;
-          if (nums[mid] > target) {
-              return binarySearch(start, mid - 1, nums, target);
-          } else if (nums[mid] < target) {
-              return binarySearch(mid + 1, end, nums, target);
-          } else {
-              return mid;
-          }
-      } else if (start > end) {
-          return -1;
-      } else {
-          return nums[start] == target ? start : -1;
+  public int search(int left, int right) {
+    /*
+    Binary search
+    */
+    while (left <= right) {
+      int pivot = (left + right) / 2;
+      if (nums[pivot] == target)
+        return pivot;
+      else {
+        if (target < nums[pivot])
+          right = pivot - 1;
+        else
+          left = pivot + 1;
       }
+    }
+    return -1;
+  }
+
+  public int search(int[] nums, int target) {
+    this.nums = nums;
+    this.target = target;
+
+    int n = nums.length;
+
+    if (n == 0)
+      return -1;
+    if (n == 1)
+      return this.nums[0] == target ? 0 : -1;
+
+    int rotate_index = find_rotate_index(0, n - 1);
+
+    // if target is the smallest element
+    if (nums[rotate_index] == target)
+      return rotate_index;
+    // if array is not rotated, search in the entire array
+    if (rotate_index == 0)
+      return search(0, n - 1);
+    if (target < nums[0])
+      // search in the right side
+      return search(rotate_index, n - 1);
+    // search in the left side
+    return search(0, rotate_index);
   }
 }

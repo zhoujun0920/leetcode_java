@@ -29,13 +29,12 @@ class Solution {
   }
 }
 
-class Solution {
-  public ListNode reverseList(ListNode head) {
-
-  }
-
-  private ListNode recursive(ListNode p1, ListNode p2) {
-  
-
-  }
+public ListNode reverseList(ListNode head) {
+    if (head == null || head.next == null) {
+      return head;
+    }
+    ListNode p = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+    return p;
 }

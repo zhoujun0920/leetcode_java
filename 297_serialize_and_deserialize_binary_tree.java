@@ -9,49 +9,69 @@
  */
 public class Codec {
 
-
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        String s = "";
-        Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        serializeF(s, root, stack);
-        s += "]";
-        return s;
-    }
-
-    private void serializeF(String s, TreeNode root, Stack<TreeNode> stack) {
-      while (!stack.isEmpty()) {
-          Stack<TreeNode> current = new Stack<>();
-          while (!stack.isEmpty()) {
-            TreeNode temp = stack.pop();
-            if (temp == null) {
-              s += (s == "" ? "null" : ",null");
-            } else {
-              s += (s == "" ? String.valueOf(temp.val) : ("," + String.valueOf(temp.val)));
-              current.push(temp.left);
-              current.push(temp.right);
-            }
-
-          }
-          stack.addAll(current);
+      if (root == null) {
+          return "";
       }
+      Queue<TreeNode> queue = new LinkedList<>();
+      queue.offer(root);
+      StringBuilder s = new StringBuilder();
+      while (!queue.isEmpty()) {
+          Queue<TreeNode> current = new LinkedList<>();
+          while (!queue.isEmpty()) {
+              TreeNode temp = queue.poll();
+              if (temp == null) {
+                  s.append((s.length() == 0 ? "null" : ",null"));
+              } else {
+                  current.offer(temp.left);
+                  current.offer(temp.right);
+                  if (s.length() == 0) {
+                      s.append(String.valueOf(temp.val));
+                  } else {
+                      s.append(",");
+                  }
+              }
+          }
+          queue.addAll(current);
+      }
+      return s.toString();
     }
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-      char[] dataArray = data.toCharArray();
-      TreeNode root = recursive(dataArray, 1);
-      return root;
-    }
+        if (data.length() <= 2) {
+            return null;
+        }
+        String[] dataArray = data.split(",");
+        Queue<TreeNode> queue = new LinkedList<>();
+        if (dataArray.length == 0) {
+            return null;
+        }
+        int index = 0;
+        TreeNode root = new TreeNode(Integer.valueOf(dataArray[index++]));
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            Queue<TreeNode> current = new LinkedList<>();
+            while (!queue.isEmpty()) {
+                TreeNode temp = queue.poll();
+                if (!dataArray[index].equals("null")) {
+                    temp.left = new TreeNode(Integer.valueOf(dataArray[index++]));
+                    current.offer(temp.left);
+                } else {
+                    index++;
+                }
+                if (!dataArray[index].equals("null")) {
+                    temp.right = new TreeNode(Integer.valueOf(dataArray[index++]));
+                    current.offer(temp.right);
+                } else {
+                    index++;
+                }
+            }
+            queue.addAll(current);
+        }
 
-    private TreeNode recursive(char[] data, int i) {
-      if (i < data.length - 1) {
-        TreeNode root = new TreeNode(Integer.valueOf(data[i]));
-        root.left = recursive(data, i + 1);
-        root.right = recursive(data, i + 2);
         return root;
-      }
     }
 }
 

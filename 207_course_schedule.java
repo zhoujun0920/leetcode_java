@@ -72,3 +72,39 @@ class Solution {
       return false;
     }
 }
+
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        Map<Integer, Set<Integer>> map = new HashMap<>();
+        for (int[] pre : prerequisites) {
+            Set<Integer> set = map.getOrDefault(pre[0], new HashSet<>());
+            set.add(pre[1]);
+            map.put(pre[0], set);
+        }
+        boolean[] memo = new boolean[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            if (!dfs(map, i, memo, new boolean[numCourses])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean dfs(Map<Integer, Set<Integer>> map, int i, boolean[] memo, boolean[] current) {
+        if (memo[i]) {
+            return memo[i];
+        }
+        if (current[i]) {
+            return false;
+        }
+        current[i] = true;
+        if (map.containsKey(i)) {
+            for (int j : map.get(i)) {
+                if (!dfs(map, j, memo, current)) {
+                    return false;
+                }
+            }
+        }
+        return memo[i] = true;
+    }
+}

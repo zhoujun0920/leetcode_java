@@ -9,6 +9,19 @@
  */
 class Solution {
     public boolean canAttendMeetings(Interval[] intervals) {
+      Arrays.sort(intervals, (i, j) -> i[0] < j[0]);
+      for (int i = 0; i < intervals.length - 1; i++) {
+        if (interval[i][1] > interval[i + 1][0]) {
+          return false;
+        }
+      }
+      return true;
+    }
+}
+
+
+class Solution {
+    public boolean canAttendMeetings(Interval[] intervals) {
       quickSort(intervals, 0, intervals.length - 1);
       for (int i = 0; i < intervals.length - 1; i++) {
         Interval temp1 = intervals[i];

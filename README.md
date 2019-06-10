@@ -433,3 +433,34 @@ https://github.com/haoel/leetcode
   * 303 Range Sum Query - Immutable
   * 304 Range Sum Query 2D - Immutable
   * 307 Range Sum Query - Mutable
+
+
+## Amazon High Frequency
+  * 973 K Closest Points to Origin
+  * 223 Rectangle Area
+  * 937 Reorder Log Files
+  * 819 Most Common Word
+  * 957 Prison Cells After N Days
+  * 73 Set Matrix Zeros
+  * 449 Serialize and Deserialized BST
+  * 95 Unique Binary Search Trees II
+  * 146 LRU Cache
+  * 763 Partition Labels
+  * 909 Snakes and Ladders
+  * 314 Binary Tree Vertical Order Traversal
+  * 545 Boundary of Binary Tree
+  * 684 Number of Distinct Islands
+  * 490 The Maze
+  * 505 The Maze II
+  * 993 Cousins in Binary Tree
+  * 692 Top K Frequent Words
+  * 210 Course Schedule II
+  * 863 All Nodes Distance K in Binary Tree
+  * 323 Number of Connected Components in an Undirected Graph
+  * 662 Maximum Width of Binary Tree
+  * Missing Number in Sorted Array
+  * 518 Coin Change 2
+  * 261 Valid Tree
+  * 773 Flood Fill
+  * 155 Min Stack
+  * 994 Rotting Oranges

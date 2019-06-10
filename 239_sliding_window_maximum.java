@@ -1,33 +1,41 @@
-// super slow
 class Solution {
-    public int[] maxSlidingWindow(int[] nums, int k) {
-      if (k > nums.length) {
-          k = nums.length;
-      }
-      if (k <= 1) {
-          return nums;
-      }
-      int[] result = new int[nums.length - k + 1];
-      HashMap<Integer, Integer> hm = new HashMap<>();
-      for (int i = 0; i < nums.length; i++) {
-        if (i < k - 1) {
-          hm.put(i, nums[i]);
-        } else {
-          hm.put(i, nums[i]);
-          result[i - k + 1] = findMax(hm);
-          hm.remove(i - k + 1);
-        }
-      }
-      return result;
+  ArrayDeque<Integer> deq = new ArrayDeque<Integer>();
+  int [] nums;
+
+  public void clean_deque(int i, int k) {
+    // remove indexes of elements not from sliding window
+    if (!deq.isEmpty() && deq.getFirst() == i - k)
+      deq.removeFirst();
+
+    // remove from deq indexes of all elements
+    // which are smaller than current element nums[i]
+    while (!deq.isEmpty() && nums[i] > nums[deq.getLast()]) {
+        deq.removeLast();
     }
 
-    public int findMax(HashMap<Integer, Integer> map) {
-      int m = Integer.MIN_VALUE;
-      for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
-        m = m > entry.getValue() ? m : entry.getValue();
-      }
-      return m;
+  }
+
+  public int[] maxSlidingWindow(int[] nums, int k) {
+    int n = nums.length;
+    if (n * k == 0) return new int[0];
+    if (k == 1) return nums;
+    // init deque and output
+    this.nums = nums;
+    for (int i = 0; i < k; i++) {
+      clean_deque(i, k);
+      deq.addLast(i);
     }
+    int [] output = new int[n - k + 1];
+    output[0] = nums[deq.getFirst()];
+
+    // build output
+    for (int i  = k; i < n; i++) {
+      clean_deque(i, k);
+      deq.addLast(i);
+      output[i - k + 1] = nums[deq.getFirst()];
+    }
+    return output;
+  }
 }
 
 // a little better

@@ -50,40 +50,43 @@ class Solution {
 // add, remove, element
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-      Set<String> dict = new HashSet<>();
-      dict.addAll(wordList);
-      if (!dict.contains(endWord)) {
-        return 0;
-      }
-      Queue<String> queue = new LinkedList<>();
-      queue.offer(beginWord);
-      int count = 0;
-      while (!queue.isEmpty()) {
-        count++;
-        for (int i = queue.size(); i > 0; i--) {
-          String word = queue.poll();
-          char[] wordArray = word.toCharArray();
-          for (int j = 0; j < wordArray.length; j++) {
-            char ch = wordArray[j];
-            for (char k = 'a'; k <= 'z'; k++) {
-              if (ch == k) {
-                continue;
-              }
-              wordArray[j] = k;
-              String newWord = String.valueOf(wordArray);
-              if (newWord.equals(endWord)) {
-                return count + 1;
-              }
-              wordArray[j] = ch;
-              if (!dict.contains(newWord)) {
-                continue;
-              }
-              dict.remove(newWord);
-              queue.offer(newWord);
-            }
-          }
+        Set<String> set = new HashSet<>();
+        for (String word : wordList) {
+            set.add(word);
         }
-      }
-      return 0;
+        if (!set.contains(endWord)) {
+            return 0;
+        }
+        Queue<String> queue = new LinkedList<>();
+        queue.add(beginWord);
+        int count = 1;
+        while (!queue.isEmpty()) {
+            Queue<String> currentQueue = new LinkedList<>();
+            while (!queue.isEmpty()) {
+                String word = queue.poll();
+                char[] wordArray = word.toCharArray();
+                for (int i = 0; i < wordArray.length; i++) {
+                    char temp = wordArray[i];
+                    for (char j = 'a'; j <= 'z'; j++) {
+                        if (temp == j) {
+                            continue;
+                        }
+                        wordArray[i] = j;
+                        String newWord = String.valueOf(wordArray);
+                        if (newWord.equals(endWord)) {
+                            return ++count;
+                        }
+                        if (set.contains(newWord)) {
+                            currentQueue.add(newWord);
+                            set.remove(newWord);
+                        }
+                    }
+                    wordArray[i] = temp;
+                }
+            }
+            count++;
+            queue.addAll(currentQueue);
+        }
+        return 0;
     }
 }
