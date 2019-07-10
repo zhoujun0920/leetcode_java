@@ -1,51 +1,63 @@
 class Solution {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
-        Set<String> dict = new HashSet<>();
-        dict.addAll(wordList);
-        if (!dict.contains(endWord)) {
-            return new LinkedList<>();
+        List<List<String>> result = new LinkedList<>();
+        Set<String> set = new HashSet<>();
+        for (String s : wordList) {
+            set.add(s);
         }
-        Queue<String> queue = new ArrayDeque<>();
+        if (!set.contains(endWord)) {
+            return result;
+        }
+        if (beginWord.equals(endWord)) {
+            List<String> t = new LinkedList<>();
+            t.add(beginWord);
+            result.add(t);
+            return result;
+        }
+        Queue<String> queue = new LinkedList<>();
+        Queue<List<String>> ladderQueue = new LinkedList<>();
+        Queue<Set<String>> setQueue = new LinkedList<>();
         queue.add(beginWord);
-        List<List<String>> results = new LinkedList<>();
-        List<String> temp = new LinkedList<>();
-        int count = 0;
-        while (!queue.isEmpty()) {
-            for (int i = queue.size(); i > 0; i--) {
-                String word = queue.poll();
-                temp.add(word);
-                if (count == 0 || temp.size() < count) {
-                    char[] wordArray = word.toCharArray();
-                    for (int j = 0; j < wordArray.length; j++) {
-                        char ch = wordArray[j];
-                        for (char k = 'a'; k <= 'z'; k++) {
-                            if (k == ch) {
-                                continue;
-                            }
-                            wordArray[j] = k;
-                            String tempWord = String.valueOf(wordArray);
-                            if (endWord.equals(tempWord)) {
-                                temp.add(endWord);
-                                results.add(new LinkedList<>(temp));
-                                count = temp.size();
-                                temp.remove(temp.size() - 1);
-                                return results;
-
-                            }
-                            if (!dict.contains(tempWord)) {
-                                wordArray[j] = ch;
-                                continue;
-                            }
-                            dict.remove(tempWord);
-                            queue.add(tempWord);
-                            wordArray[j] = ch;
+        List<String> ttt = new LinkedList<>();
+        ttt.add(beginWord);
+        ladderQueue.add(ttt);
+        setQueue.add(set);
+        boolean found = false;
+        while (!queue.isEmpty() && !found) {
+            Queue<String> current = new LinkedList<>();
+            while (!queue.isEmpty()) {
+                String currentWord = queue.poll();
+                List<String> tempList = ladderQueue.poll();
+                Set<String> tempSet = setQueue.poll();
+                char[] array = currentWord.toCharArray();
+                for (int i = 0; i < currentWord.length(); i++) {
+                    char originalChar = array[i];
+                    for (char j = 'a'; j <= 'z'; j++) {
+                        array[i] = j;
+                        String temp = String.valueOf(array);
+                        if (temp.equals(endWord)) {
+                            found = true;
+                            List<String> newTemp = new LinkedList<>(tempList);
+                            newTemp.add(temp);
+                            result.add(newTemp);
+                        }
+                        if (!found && tempSet.contains(temp)) {
+                            current.add(temp);
+                            List<String> newTemp = new LinkedList<>(tempList);
+                            Set<String> newTempSet = new HashSet<>(tempSet);
+                            newTempSet.remove(temp);
+                            newTemp.add(temp);
+                            ladderQueue.add(newTemp);
+                            setQueue.add(newTempSet);
                         }
                     }
+                    array[i] = originalChar;
                 }
-                //temp.remove(temp.size() - 1);
             }
-            //temp.remove(temp.size() - 1);
+            if (!found) {
+                queue.addAll(current);
+            }
         }
-        return results;
+        return result;
     }
 }

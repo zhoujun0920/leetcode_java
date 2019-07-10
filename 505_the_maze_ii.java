@@ -1,4 +1,44 @@
 class Solution {
+    public int shortestDistance(int[][] maze, int[] start, int[] destination) {
+        if (maze.length == 0 || maze[0].length == 0) {
+            return 0;
+        }
+        int[][] memo = new int[maze.length][maze[0].length];
+        for (int[] row : memo) {
+            Arrays.fill(row, Integer.MAX_VALUE);
+        }
+        memo[start[0]][start[1]] = 0;
+        help(maze, start, memo);
+        return memo[destination[0]][destination[1]] == Integer.MAX_VALUE ? -1 : memo[destination[0]][destination[1]];
+    }
+
+    private void help(int[][] maze, int[] start, int[][] memo) {
+        int[][] ds = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+        int originSteps = memo[start[0]][start[1]];
+        for (int[] d : ds) {
+            int steps = 0;
+            int[] next = {start[0] + d[0], start[1] + d[1]};
+            while (isValid(maze, next)) {
+                next[0] += d[0];
+                next[1] += d[1];
+                steps++;
+            }
+            next[0] -= d[0];
+            next[1] -= d[1];
+            if (originSteps + steps < memo[next[0]][next[1]]) {
+                memo[next[0]][next[1]] = originSteps + steps;
+                help(maze, next, memo);
+            }
+        }
+    }
+
+    private boolean isValid(int[][] maze, int[] start) {
+        return start[0] >= 0 && start[1] >= 1 && start[0] < maze.length && start[1] < maze[0].length && maze[start[0]][start[1]] == 0;
+    }
+}
+
+
+class Solution {
 
     int[][] directions = {{0,1},{0,-1},{1,0},{-1,0}};
 

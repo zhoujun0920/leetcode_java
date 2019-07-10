@@ -464,3 +464,32 @@ https://github.com/haoel/leetcode
   * 773 Flood Fill
   * 155 Min Stack
   * 994 Rotting Oranges
+  * 560 Subarray sum equals K
+  * 983 Minimum cost for tickets
+  * 508 Most Frequent Subtree Sum
+  * 445 Add Two Numbers II
+  * 997 Find the Town Judge
+  * 516 Longest Palindromic Subsequence
+  * 161 One Edit Distance
+  * 417 Pacific Atlantic Water Flow
+  * 442 Find All Duplicates in an Array
+  * 394 Decode String
+  * 743 Network Delay Time
+  * 635 Design Log Storage System
+  * 652 Find Duplicate Subtrees
+  * 74 Search a 2D Matrix
+  * 675 Cut Off Trees for Golf Events
+  * 547 Friend Circles
+  * 126 Word Ladder II
+  * 642 Design Search Autocomplete System
+
+## Airbnb High Frequency
+  * 336 Palindrome Pairs
+  * 604 Design Compressed String Iterator
+  * 755 Pour Water
+  * 787 Cheapest Flights Within K Stops
+  * 269 Alien Dictionary
+  * 68 Text Justification
+  * Ten Wizards
+  * Regions
+  * Number of Rectangle

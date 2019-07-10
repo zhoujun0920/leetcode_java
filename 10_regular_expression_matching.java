@@ -1,4 +1,34 @@
 class Solution {
+   public boolean isMatch(String text, String pattern) {
+        Boolean[][] memo = new Boolean[text.length() + 1][pattern.length() + 1];
+        return dp(0, 0, text, pattern, memo);
+    }
+
+    public boolean dp(int i, int j, String text, String pattern, Boolean[][] memo) {
+        if (memo[i][j] != null) {
+            return memo[i][j];
+        }
+        Boolean ans = false;
+        if (j == pattern.length()){
+            ans = i == text.length();
+        } else{
+            boolean first_match = (i < text.length() &&
+                                   (pattern.charAt(j) == text.charAt(i) ||
+                                    pattern.charAt(j) == '.'));
+
+            if (j + 1 < pattern.length() && pattern.charAt(j+1) == '*'){
+                ans = (dp(i, j+2, text, pattern, memo) ||
+                       first_match && dp(i+1, j, text, pattern, memo));
+            } else {
+                ans = first_match && dp(i+1, j+1, text, pattern, memo);
+            }
+        }
+        memo[i][j] = ans;
+        return ans;
+    }
+}
+
+class Solution {
   public boolean isMatch(String s, String p) {
      return recursive(s, 0, p, 0, new Boolean[s.length()][p.length()]);
  }

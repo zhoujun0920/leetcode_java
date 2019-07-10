@@ -1,10 +1,14 @@
+// 11 [1,2,5]
+
 class Solution {
 
     public int coinChange(int[] coins, int amount) {
         if (amount == 0) {
           return 0;
         }
-        return recursive(coins, amount, new int[amount + 1]);
+        Stack<Integer> stack = new Stack<>();
+        int result = recursive(coins, amount, new int[amount + 1]);
+        return result;
     }
 
     private int recursive(int[] coins, int amount, int[] memo) {
@@ -19,9 +23,10 @@ class Solution {
         }
         int temp = Integer.MAX_VALUE;
         for (int coin : coins) {
-          int changes = recursive(coins, amount - coin, memo);
+          int changes = recursive(coins, amount - coin, stack, memo);
           if (changes >= 0 && changes < temp) {
             temp = changes + 1;
+            stack.push(coin);
           }
         }
         memo[amount] = temp == Integer.MAX_VALUE ? -1 : temp;
